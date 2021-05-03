@@ -73,9 +73,9 @@
 
 .form .heading {
   margin-bottom: 35px;
-  color: rgb(209, 101, 236);
+  color: #2f6cee;
   margin-left: 105px;
-  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.664);
+  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.404);
 }
 
 .form .ct {
@@ -245,7 +245,7 @@ select {
   }
 
   .form .heading {
-    padding-left: 50px;
+    padding-left: 46px;
   }
 
   .form .ct input,

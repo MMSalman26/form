@@ -239,6 +239,9 @@ select {
   .input {
     width: 320px;
   }
+  .input {
+    box-shadow: 3px 3px 20px rgb(68, 43, 85), -3px -3px 10px #979de2;
+  }
 
   .form .heading {
     padding-left: 50px;

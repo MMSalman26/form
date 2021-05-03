@@ -73,9 +73,9 @@
 
 .form .heading {
   margin-bottom: 35px;
-  color: rgba(0, 255, 255, 0.877);
+  color: rgb(209, 101, 236);
   margin-left: 105px;
-  text-shadow: 2px 2px 4px rgb(145, 70, 107);
+  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.664);
 }
 
 .form .ct {

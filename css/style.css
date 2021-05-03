@@ -101,11 +101,14 @@ select {
   background: transparent;
   box-shadow: inset 2px 2px 4px #ffffff,
     inset -2px -2px 4px rgba(0, 0, 0, 0.493);
-
   padding: 10px;
   font-size: 0.9rem;
   color: rgb(30, 148, 163);
   font-weight: bold;
+}
+
+.form .bg select {
+  padding-top: 7px;
 }
 
 .form .name input:hover {

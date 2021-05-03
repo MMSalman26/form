@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  box-shadow: 10px 10px 20px rgb(57, 36, 71), -3px -3px 20px #ced0eb;
+  box-shadow: 10px 10px 20px rgb(57, 36, 71), -3px -3px 20px #979de2;
   margin-top: 10px;
 }
 
@@ -100,11 +100,15 @@ select {
   height: 40px;
   border-radius: 11px;
   background: transparent;
-  box-shadow: inset 2px 2px 4px #ced0eb, inset -4px -4px 4px rgb(57, 36, 71);
+  box-shadow: inset 2px 2px 4px #979de2, inset -4px -4px 4px rgb(57, 36, 71);
   padding: 10px;
   font-size: 0.9rem;
   color: rgb(30, 148, 163);
   font-weight: bold;
+}
+
+.form .bg select {
+  padding-top: 7px;
 }
 
 .form .bg select option {

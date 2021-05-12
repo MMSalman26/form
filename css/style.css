@@ -8,12 +8,12 @@
 
 .cont {
   min-height: 100vh;
-  background-image: linear-gradient(315deg, #f5f7fa 0%, #b8c6db 74%);
+  background-image: linear-gradient(315deg, #f5f7fa 0%, #d4dbe6 74%);
 }
 
 .header {
   height: 40px;
-  background: rgba(0, 0, 0, 0.151);
+  background: rgba(0, 0, 0, 0.082);
 }
 
 .logo h2 {
@@ -44,7 +44,7 @@
 }
 
 .main {
-  background-image: linear-gradient(315deg, #f5f7fa 0%, #b8c6db 74%);
+  background-image: linear-gradient(315deg, #f5f7fa 0%, #d4dbe6 74%);
   min-height: 95vh;
   display: flex;
   flex-flow: row wrap;
@@ -58,7 +58,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.363), -7px -7px 20px #fdfdfd;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.363), -9px -9px 20px #ffffff;
+  border-left: 0.8px solid rgba(0, 0, 0, 0.158);
+  border-top: 0.8px solid rgba(0, 0, 0, 0.158);
 }
 
 .input:hover {

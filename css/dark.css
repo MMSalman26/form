@@ -234,6 +234,11 @@ select {
     width: 320px;
     height: 35px;
   }
+
+  .input:hover {
+    box-shadow: inset 8px 8px 8px rgba(96, 87, 218, 0.637),
+      inset -8px -8px 8px #cc64fca2;
+  }
 }
 
 @media all and (max-width: 445px) {

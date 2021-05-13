@@ -23,35 +23,35 @@
 
         <main class="main">
             <div class="input">
-                <form action="#" class="form">
-
+                <form action="#" class="form" name="google-sheet">
+                
                     <div class="heading">
                         <h2>Data Entry Form</h2>
                     </div>
-
+                
                     <div class="ct name">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="ex. M M Salman">
                     </div>
-
+                
                     <div class="ct sid">
                         <label for="sid">Student Id</label>
                         <input type="text" name="sid" id="sid" placeholder="ex. 200926">
                     </div>
-
+                
                     <div class="ct mb_n">
                         <label for="mb_n">Mobile Number</label>
                         <input type="text" name="mb_n" id="mb_n" placeholder="ex. 017234567891">
                     </div>
-
+                
                     <div class="ct ht">
                         <label for="ht">Home Town</label>
                         <input type="text" name="ht" id="ht" placeholder="ex. Khulna">
                     </div>
-
+                
                     <div class="ct bg">
                         <label for="bg">Blood Group</label>
-                        <select>
+                        <select name="bg">
                             <option value="a+">A+</option>
                             <option value="a-">A-</option>
                             <option value="b+">B+</option>
@@ -62,20 +62,35 @@
                             <option value="o-">O-</option>
                         </select>
                     </div>
-
+                
                     <div class="ct email">
                         <label for="email">E-Mail</label>
                         <input type="email" name="email" id="email" placeholder="ex. salman@gmail.com">
                     </div>
-
+                
                     <div class="ct btn">
-                        <input type="button" value="Submit">
+                        <input type="submit" name="submit" value="Submit">
                     </div>
-
+                
                 </form>
-            </div>
-        </main>
-    </div>
+                </div>
+                </main>
+                </div>
+                
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzbFsn_HWuY58XTJ8qoVNC_Hixbb14dxh01eBMCuFc6_JyuK0vUgesdv_LZkPq43nW6Zw/exec'
+                    const form = document.forms['google-sheet']
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                            .then(response => alert("Thanks for Your Valuable Response..."))
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
+                
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+                </script>
 </body>
 
 </html>
